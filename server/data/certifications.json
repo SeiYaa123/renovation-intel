@@ -6,18 +6,19 @@
       "type": "product",
       "jurisdiction": "BE",
       "issuer": "BENOR",
-      "summary": "Marquage de conformité belge pour produits de construction.",
-      "official_register_url": "https://www.benor.be/",
-      "docs_url": "https://www.benor.be/fr/specifications",
+      "summary": "Label de qualité pour produits de construction en Belgique.",
+      "official_register_url": "https://www.benor.be/en/",
+      "docs_url": "https://www.benor.be/en/benor-vzw/the-benor-label/",
       "tags": [
         "qualité",
         "produit"
       ],
       "status": "active",
-      "updatedAt": "2025-09-25T22:24:09.146Z",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
       "aliases": [
         "Label BENOR"
-      ]
+      ],
+      "source_id": "benor-label"
     },
     {
       "name": "ATG (UBAtc)",
@@ -26,8 +27,8 @@
       "jurisdiction": "BE",
       "issuer": "UBAtc",
       "summary": "Agrément technique pour produits/systèmes en Belgique.",
-      "official_register_url": "https://www.ubatc.be/fr/atg",
-      "docs_url": "https://www.ubatc.be/fr",
+      "official_register_url": "https://www.buildwise.be/fr/recherche-innovation/agrements-techniques-atg/",
+      "docs_url": "https://www.bcca.be/fr/evaluation-technique",
       "tags": [
         "agrément",
         "produit",
@@ -35,7 +36,8 @@
       ],
       "status": "active",
       "aliases": [],
-      "updatedAt": "2025-09-25T22:24:09.146Z"
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "ubatc-atg"
     },
     {
       "name": "BREEAM",
@@ -92,22 +94,316 @@
       "updatedAt": "2025-09-25T22:24:09.146Z"
     },
     {
-      "name": "VCA (SCC)",
+      "name": "VCA (SCC) – Diplômes",
       "slug": "vca-scc",
-      "type": "company",
+      "type": "person",
       "jurisdiction": "BE",
-      "issuer": "SCC / VCA",
-      "summary": "Certification sécurité pour entreprises et travailleurs.",
-      "official_register_url": "https://www.vca.be/",
-      "docs_url": "https://www.vca.be/nl/certificatie",
+      "issuer": "BESACC-VCA",
+      "summary": "Registre central des diplômes SCC/VCA (sécurité).",
+      "official_register_url": "https://www.besacc-vca.be/en/diplomaregister/",
+      "docs_url": "https://www.besacc-vca.be/en/vca-opleidingen/",
       "tags": [
         "sécurité",
-        "entreprise",
-        "personne"
+        "personne",
+        "entreprise"
       ],
       "status": "active",
       "aliases": [],
-      "updatedAt": "2025-09-25T22:24:09.146Z"
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "vca-register"
+    },
+    {
+      "name": "RESCert – Chaudières à biomasse",
+      "slug": "rescert-chaudieres-a-biomasse",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "RESCert – Pompes à chaleur",
+      "slug": "rescert-pompes-a-chaleur",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "RESCert – Systèmes géothermiques superficiels",
+      "slug": "rescert-systemes-geothermiques-superficiels",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "RESCert – Systèmes solaires photovoltaïques",
+      "slug": "rescert-systemes-solaires-photovoltaiques",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "RESCert – Systèmes solaires thermiques - combi",
+      "slug": "rescert-systemes-solaires-thermiques-combi",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "RESCert – Systèmes solaires thermiques - eau chaude sanitaire",
+      "slug": "rescert-systemes-solaires-thermiques-eau-chaude-sanitaire",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "RESCert",
+      "summary": "Certification des installateurs d’énergies renouvelables (PV/PAC/solaire/biomasse/géothermie).",
+      "official_register_url": "https://rescert.be/fr/lists",
+      "docs_url": "https://rescert.be/fr",
+      "tags": [
+        "énergie",
+        "installateur",
+        "pv",
+        "pac",
+        "solaire"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rescert-be"
+    },
+    {
+      "name": "Cerga (installateurs gaz)",
+      "slug": "cerga",
+      "type": "company",
+      "jurisdiction": "BE",
+      "issuer": "Cerga",
+      "summary": "Label qualité pour installateurs gaz en Belgique (naturel & propane).",
+      "official_register_url": "https://landing.cerga.be/?lang=fr",
+      "docs_url": "https://www.gas.be/fr/cerga/courses/formation-specifique-gaz-propane",
+      "tags": [
+        "gaz",
+        "installateur",
+        "sécurité"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "cerga"
+    },
+    {
+      "name": "RGIE (conformité installations électriques)",
+      "slug": "rgie-be",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "SPF Économie",
+      "summary": "Réglementation belge des installations électriques. Concerne la conformité et les contrôles par organismes agréés.",
+      "official_register_url": "https://economie.fgov.be/fr/themes/energie/installations-electriques/le-reglement-general-sur",
+      "docs_url": "https://economie.fgov.be/fr/publications/reglement-general-sur-les",
+      "tags": [
+        "électricité",
+        "réglementaire",
+        "contrôle"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "rgie-be"
+    },
+    {
+      "name": "INCERT (sécurité – systèmes d’alarme)",
+      "slug": "incert",
+      "type": "company",
+      "jurisdiction": "BE",
+      "issuer": "INCERT",
+      "summary": "Schéma de certification pour installateurs et produits de sécurité (intrusion, CCTV, …).",
+      "official_register_url": "https://www.incert.be/fr/rechercher",
+      "docs_url": "https://www.incert.be/fr",
+      "tags": [
+        "électricité",
+        "sécurité",
+        "alarme",
+        "cctv"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "incert-be"
+    },
+    {
+      "name": "BOSEC (systèmes de détection incendie)",
+      "slug": "bosec",
+      "type": "company",
+      "jurisdiction": "BE",
+      "issuer": "BOSEC",
+      "summary": "Certification pour produits et entreprises en détection incendie.",
+      "official_register_url": "https://www.bosec.be/fr/certified",
+      "docs_url": "https://www.bosec.be/fr",
+      "tags": [
+        "électricité",
+        "incendie",
+        "sécurité",
+        "entreprise"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "bosec-be"
+    },
+    {
+      "name": "F-Gas (manipulation des fluides frigorigènes)",
+      "slug": "fgas-be",
+      "type": "person",
+      "jurisdiction": "BE",
+      "issuer": "Autorités belges (Climat/SPF)",
+      "summary": "Certification du personnel/entreprises manipulant des gaz à effet de serre fluorés (réfrigération, climatisation).",
+      "official_register_url": "https://www.climat.be/fr-be/politiques/f-gaz",
+      "docs_url": "https://ec.europa.eu/clima/policies/f-gas_fr",
+      "tags": [
+        "hvac",
+        "réfrigération",
+        "sécurité",
+        "environnement"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "fgas-be"
+    },
+    {
+      "name": "BCCA – Étanchéité des toitures",
+      "slug": "bcca-roofing",
+      "type": "company",
+      "jurisdiction": "BE",
+      "issuer": "BCCA",
+      "summary": "Schémas d’agrément/contrôle liés à l’étanchéité des toitures en Belgique.",
+      "official_register_url": "https://www.bcca.be/fr/etancheite-des-toitures",
+      "docs_url": "https://www.bcca.be/fr",
+      "tags": [
+        "toiture",
+        "étanchéité",
+        "entreprise"
+      ],
+      "status": "active",
+      "updatedAt": "2025-09-25T23:01:46.092Z",
+      "source_id": "bcca-be"
     }
-  ]
+  ],
+  "meta": {
+    "source:rescert-be": {
+      "checksum": "928b568533d8ca9df151863e3afa7f08bc8a616b",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://rescert.be/fr/lists",
+      "jurisdiction": "BE"
+    },
+    "source:benor-label": {
+      "checksum": "0da2db350419a688471667418086b401cb04a71c",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.benor.be/en/",
+      "jurisdiction": "BE"
+    },
+    "source:ubatc-atg": {
+      "checksum": "a44b73d8feb6ea27b04797ed8b6ebb198b89dad0",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.buildwise.be/fr/recherche-innovation/agrements-techniques-atg/",
+      "jurisdiction": "BE"
+    },
+    "source:vca-register": {
+      "checksum": "fb2a11de2715f3b17a08a5c3f2f0a86cdfa6d8f7",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.besacc-vca.be/en/diplomaregister/",
+      "jurisdiction": "BE"
+    },
+    "source:cerga": {
+      "checksum": "da8295b8e178b92ab2353e349f085bc5ec188238",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.cerga.be/fr",
+      "jurisdiction": "BE"
+    },
+    "source:rgie-be": {
+      "checksum": "2956f22ace471ccf008af2880f8ee6dfab3886d3",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://economie.fgov.be/fr/themes/energie/installations-electriques/le-reglement-general-sur",
+      "jurisdiction": "BE"
+    },
+    "source:incert-be": {
+      "checksum": "18d8a6ff45d80829e7e3a4cdeb2df98c9281e7e9",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.incert.be/fr",
+      "jurisdiction": "BE"
+    },
+    "source:bosec-be": {
+      "checksum": "07e6ed7d741271d66ac3975ad39944290029a673",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.bosec.be/fr",
+      "jurisdiction": "BE"
+    },
+    "source:fgas-be": {
+      "checksum": "92acf85d9664ec4de482533680fd8b540b0beb7e",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.climat.be/fr-be/politiques/f-gaz",
+      "jurisdiction": "BE"
+    },
+    "source:bcca-be": {
+      "checksum": "161fc6d76bae138a36fe7a1d5b3b05f35ade7692",
+      "lastSync": "2025-09-25T23:01:46.092Z",
+      "url": "https://www.bcca.be/fr/etancheite-des-toitures",
+      "jurisdiction": "BE"
+    }
+  }
 }
