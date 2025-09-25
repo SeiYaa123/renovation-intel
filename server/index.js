@@ -4,6 +4,13 @@ const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
 
+process.on("unhandledRejection", (err) =>
+  console.error("[UNHANDLED REJECTION]", err)
+);
+process.on("uncaughtException", (err) =>
+  console.error("[UNCAUGHT EXCEPTION]", err)
+);
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -47,9 +54,104 @@ function haversineKm(a, b) {
   return 2 * R * Math.asin(Math.sqrt(s1));
 }
 
+// ---------- ROUTES ----------
 app.get("/api/ping", (_req, res) => res.json({ ok: true }));
 
-// /api/suppliers?q=&eco=&lat=&lng=&maxKm=&sort=&limit=&page=
+// SCRAPING PRIX (depuis suppliers.json -> website)
+app.get("/api/scrape-prices", async (req, res) => {
+  const q = (req.query.q || "").toString().trim();
+  const limit = req.query.limit ? Number(req.query.limit) : 8;
+  const ids = req.query.ids
+    ? String(req.query.ids).split(",").map(Number).filter(Boolean)
+    : [];
+  if (!q) return res.json({ query: q, items: [] });
+
+  try {
+    // ⚠️ import ici (hors des autres routes) et une seule fois
+    const { scrapePricesFromSuppliers } = require("./scrapers/scrape");
+    const items = await scrapePricesFromSuppliers(q, { limit, ids });
+    res.json({ query: q, items });
+  } catch (e) {
+    console.error("scrape-prices error:", e);
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+// Liste des suppliers ayant un website (pour debug UI)
+app.get("/api/suppliers/sites", (req, res) => {
+  try {
+    const items = (
+      require("fs").existsSync(path.join(__dirname, "data", "suppliers.json"))
+        ? JSON.parse(
+            require("fs").readFileSync(
+              path.join(__dirname, "data", "suppliers.json"),
+              "utf8"
+            )
+          )
+        : []
+    )
+      .filter((s) => s.website)
+      .map((s) => ({ id: s.id, name: s.name, website: s.website }));
+    res.json({ total: items.length, items });
+  } catch (e) {
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+// COMPARATEUR (avec marge)
+app.get("/api/compare-prices", async (req, res) => {
+  const q = (req.query.q || "").toString().trim();
+  const sell = req.query.sell ? Number(req.query.sell) : null;
+  const limit = req.query.limit ? Number(req.query.limit) : 10;
+  const ids = req.query.ids
+    ? String(req.query.ids).split(",").map(Number).filter(Boolean)
+    : [];
+
+  if (!q) return res.json({ query: q, sell, items: [] });
+
+  try {
+    const { scrapePricesFromSuppliers } = require("./scrapers/scrape");
+    const raw = await scrapePricesFromSuppliers(q, { limit, ids });
+
+    const FX = { EUR: 1, USD: 0.93, GBP: 1.17 };
+
+    const items = raw
+      .map((r) => {
+        const fx = FX[r.currency] ?? 1;
+        const cost_eur = r.price_value != null ? r.price_value * fx : null;
+        const margin_abs =
+          sell != null && cost_eur != null ? sell - cost_eur : null;
+        const margin_pct =
+          sell != null && cost_eur != null && sell > 0
+            ? ((sell - cost_eur) / sell) * 100
+            : null;
+
+        return {
+          supplier_id: r.supplier_id,
+          supplier_name: r.supplier_name,
+          product_url: r.product_url,
+          currency: r.currency,
+          price_value: r.price_value,
+          cost_eur,
+          margin_abs,
+          margin_pct,
+        };
+      })
+      .filter((x) => x.cost_eur != null)
+      .sort((a, b) =>
+        sell == null
+          ? a.cost_eur - b.cost_eur
+          : (b.margin_abs ?? -1e9) - (a.margin_abs ?? -1e9)
+      );
+
+    res.json({ query: q, sell, items });
+  } catch (e) {
+    console.error("compare-prices error:", e);
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+// SUPPLIERS (liste/filtre/pagination)
 app.get("/api/suppliers", (req, res) => {
   const q = (req.query.q || "").toString().trim();
   const eco = (req.query.eco || "").toString().trim().toUpperCase();
@@ -62,41 +164,6 @@ app.get("/api/suppliers", (req, res) => {
   const sort = (req.query.sort || "").toString(); // '', 'distance','rating_desc','price_asc'
   const limit = Math.min(Math.max(Number(req.query.limit || 12), 1), 100);
   const page = Math.max(Number(req.query.page || 1), 1);
-  const { scrapePrices } = require("./scrapers/scrape");
-  const { scrapePricesFromSuppliers } = require("./scrapers/scrape");
-
-  // GET /api/scrape-prices?q=visseuse&limit=8&ids=1,3
-  app.get("/api/scrape-prices", async (req, res) => {
-    const q = (req.query.q || "").toString().trim();
-    const limit = req.query.limit ? Number(req.query.limit) : 8;
-    const ids = req.query.ids
-      ? String(req.query.ids)
-          .split(",")
-          .map((n) => Number(n))
-          .filter(Boolean)
-      : [];
-    if (!q) return res.json({ query: q, items: [] });
-    try {
-      const items = await scrapePricesFromSuppliers(q, { limit, ids });
-      res.json({ query: q, items });
-    } catch (e) {
-      res.status(500).json({ error: String(e) });
-    }
-  });
-
-  // ... tes autres routes
-
-  // GET /api/scrape-prices?q=visseuse
-  app.get("/api/scrape-prices", async (req, res) => {
-    const q = (req.query.q || "").toString().trim();
-    if (!q) return res.json({ query: q, items: [] });
-    try {
-      const items = await scrapePrices(q);
-      res.json({ query: q, items });
-    } catch (e) {
-      res.status(500).json({ error: String(e) });
-    }
-  });
 
   let items = loadSuppliers();
 
@@ -146,6 +213,7 @@ app.get("/api/suppliers", (req, res) => {
   res.json({ total, page, limit, items: slice });
 });
 
+// ---------- START ----------
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Suppliers API running on http://localhost:${PORT}`);

@@ -51,7 +51,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8417424,
     "lng": 4.2319136,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q2294120",
+      "wikipedia": null
+    }
   },
   {
     "id": 5,
@@ -65,7 +69,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8703925,
     "lng": 4.5007923,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q2510786",
+      "wikipedia": null
+    }
   },
   {
     "id": 6,
@@ -79,7 +87,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8683358,
     "lng": 4.4540655,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 7,
@@ -93,7 +105,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8685236,
     "lng": 4.4545483,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 8,
@@ -107,7 +123,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8685558,
     "lng": 4.4547709,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 9,
@@ -121,7 +141,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0343431,
     "lng": 4.5081818,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 10,
@@ -135,7 +159,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8700086,
     "lng": 4.4593922,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 11,
@@ -149,7 +177,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8697622,
     "lng": 4.4608666,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 12,
@@ -163,7 +195,11 @@
     "city": "Sint-Stevens-Woluwe",
     "lat": 50.8698931,
     "lng": 4.4616693,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 13,
@@ -177,7 +213,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8628333,
     "lng": 4.4300207,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 14,
@@ -191,7 +231,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8715816,
     "lng": 4.474624,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 15,
@@ -205,7 +249,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8722948,
     "lng": 4.4714025,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 16,
@@ -219,7 +267,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8722803,
     "lng": 4.4716276,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 17,
@@ -233,7 +285,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7005381,
     "lng": 4.400851,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q679750",
+      "wikipedia": null
+    }
   },
   {
     "id": 18,
@@ -247,7 +303,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8480721,
     "lng": 4.3175853,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 19,
@@ -261,7 +321,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8967991,
     "lng": 4.4343085,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 20,
@@ -275,7 +339,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9432685,
     "lng": 4.5646306,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 21,
@@ -289,7 +357,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9988469,
     "lng": 4.5468232,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 22,
@@ -303,7 +375,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8358786,
     "lng": 4.3775135,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 23,
@@ -317,7 +393,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9891734,
     "lng": 4.4945621,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 24,
@@ -331,7 +411,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.982223,
     "lng": 4.3489418,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 25,
@@ -345,7 +429,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9937113,
     "lng": 4.262516,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 26,
@@ -359,7 +447,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9546437,
     "lng": 4.3825131,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 27,
@@ -373,7 +465,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8649682,
     "lng": 4.4353446,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 28,
@@ -387,7 +483,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9320364,
     "lng": 4.0371036,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 29,
@@ -401,7 +501,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8862163,
     "lng": 4.6716318,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 30,
@@ -415,7 +519,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9128665,
     "lng": 4.4311354,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 31,
@@ -429,7 +537,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8406581,
     "lng": 4.3194402,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 32,
@@ -443,7 +555,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9107207,
     "lng": 4.6775546,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 33,
@@ -457,7 +573,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8671931,
     "lng": 4.4471932,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 34,
@@ -471,7 +591,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0131598,
     "lng": 4.5026071,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 35,
@@ -485,7 +609,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.810627,
     "lng": 4.1692372,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 36,
@@ -499,7 +627,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9706282,
     "lng": 4.6204565,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 37,
@@ -513,7 +645,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9177801,
     "lng": 4.2346485,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 38,
@@ -527,7 +663,11 @@
     "city": "Mechelen",
     "lat": 51.0361827,
     "lng": 4.473935,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q2510786",
+      "wikipedia": null
+    }
   },
   {
     "id": 39,
@@ -541,7 +681,11 @@
     "city": "Leuven",
     "lat": 50.8879353,
     "lng": 4.7007363,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 40,
@@ -555,7 +699,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9048659,
     "lng": 4.5175893,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 41,
@@ -569,7 +717,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9487326,
     "lng": 4.4946066,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 42,
@@ -583,7 +735,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9438725,
     "lng": 4.5669013,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 43,
@@ -597,7 +753,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8360735,
     "lng": 4.3810106,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 44,
@@ -611,7 +771,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8322929,
     "lng": 4.3874814,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 45,
@@ -625,7 +789,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8723546,
     "lng": 4.3732346,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 46,
@@ -639,7 +807,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8171082,
     "lng": 4.3890161,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 47,
@@ -653,7 +825,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8186066,
     "lng": 4.3879569,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 48,
@@ -667,7 +843,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0465625,
     "lng": 4.400859,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 49,
@@ -681,7 +861,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6847822,
     "lng": 4.3084951,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 50,
@@ -695,7 +879,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8243504,
     "lng": 4.3505561,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 51,
@@ -709,7 +897,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9761367,
     "lng": 4.5847237,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 52,
@@ -723,7 +915,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8206966,
     "lng": 4.3580728,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 53,
@@ -737,7 +933,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8039073,
     "lng": 4.3369087,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 54,
@@ -751,7 +951,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0319074,
     "lng": 4.4715263,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 55,
@@ -765,7 +969,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9199585,
     "lng": 4.5072883,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 56,
@@ -779,7 +987,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7812666,
     "lng": 4.5119545,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 57,
@@ -793,7 +1005,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7231354,
     "lng": 4.5163738,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 58,
@@ -807,7 +1023,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8422598,
     "lng": 4.46698,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 59,
@@ -821,7 +1041,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8220648,
     "lng": 4.3425562,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 60,
@@ -835,7 +1059,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9258421,
     "lng": 4.4382511,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 61,
@@ -849,7 +1077,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8651341,
     "lng": 4.4528457,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 62,
@@ -863,7 +1095,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8639897,
     "lng": 4.455013,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 63,
@@ -877,7 +1113,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.742393,
     "lng": 4.2417123,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 64,
@@ -891,7 +1131,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7351113,
     "lng": 4.2864147,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 65,
@@ -905,7 +1149,11 @@
     "city": "Wavre Sud",
     "lat": 50.706487,
     "lng": 4.5967068,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 66,
@@ -919,7 +1167,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7142557,
     "lng": 4.6112965,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 67,
@@ -933,7 +1185,11 @@
     "city": "La Hulpe",
     "lat": 50.731061,
     "lng": 4.4870491,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 68,
@@ -947,7 +1203,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8409085,
     "lng": 4.4640913,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 69,
@@ -961,7 +1221,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8886072,
     "lng": 4.3365908,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 70,
@@ -975,7 +1239,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.818796,
     "lng": 4.3918397,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 71,
@@ -989,7 +1257,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8300374,
     "lng": 4.3729563,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 72,
@@ -1003,7 +1275,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8792956,
     "lng": 4.2828501,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 73,
@@ -1017,7 +1293,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9151799,
     "lng": 4.0385114,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 74,
@@ -1031,7 +1311,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8294586,
     "lng": 4.3725645,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 75,
@@ -1045,7 +1329,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8728324,
     "lng": 4.3616083,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 76,
@@ -1059,7 +1347,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8202582,
     "lng": 4.3887767,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 77,
@@ -1073,7 +1365,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6639444,
     "lng": 4.176834,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 78,
@@ -1087,7 +1383,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9502646,
     "lng": 4.4495849,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 79,
@@ -1101,7 +1401,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7243491,
     "lng": 4.6375955,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 80,
@@ -1115,7 +1419,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9475452,
     "lng": 4.4455495,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 81,
@@ -1129,7 +1437,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9481189,
     "lng": 4.4462188,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 82,
@@ -1143,7 +1455,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8304935,
     "lng": 4.3369867,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 83,
@@ -1157,7 +1473,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8217825,
     "lng": 4.4047626,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 84,
@@ -1171,7 +1491,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8148706,
     "lng": 4.2983005,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 85,
@@ -1185,7 +1509,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8901014,
     "lng": 4.3879361,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 86,
@@ -1199,7 +1527,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7940918,
     "lng": 4.3014854,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 87,
@@ -1213,7 +1545,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8944081,
     "lng": 4.3981432,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 88,
@@ -1227,7 +1563,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8625231,
     "lng": 4.4300822,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 89,
@@ -1241,7 +1581,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8999724,
     "lng": 4.3601884,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 90,
@@ -1255,7 +1599,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8223235,
     "lng": 4.3228712,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 91,
@@ -1269,7 +1617,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9128388,
     "lng": 4.3572858,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 92,
@@ -1283,7 +1635,11 @@
     "city": "Asse",
     "lat": 50.8910947,
     "lng": 4.2648983,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 93,
@@ -1297,7 +1653,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8800104,
     "lng": 4.3788965,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 94,
@@ -1311,7 +1671,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0272301,
     "lng": 4.480007,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 95,
@@ -1325,7 +1689,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0540044,
     "lng": 4.4588178,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 96,
@@ -1339,7 +1707,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8131283,
     "lng": 4.3477896,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 97,
@@ -1353,7 +1725,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8306317,
     "lng": 4.3743174,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 98,
@@ -1367,7 +1743,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8682712,
     "lng": 4.379718,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 99,
@@ -1381,7 +1761,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0409931,
     "lng": 4.4337111,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 100,
@@ -1395,7 +1779,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9934121,
     "lng": 4.4739646,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q7824103",
+      "wikipedia": null
+    }
   },
   {
     "id": 101,
@@ -1409,7 +1797,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 51.0160512,
     "lng": 4.1976893,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 102,
@@ -1423,7 +1815,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8618949,
     "lng": 4.3763623,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 103,
@@ -1437,7 +1833,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6913232,
     "lng": 4.3319464,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 104,
@@ -1451,7 +1851,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8807214,
     "lng": 4.3419959,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 105,
@@ -1465,7 +1869,11 @@
     "city": "Opwijk",
     "lat": 50.9756835,
     "lng": 4.1814092,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 106,
@@ -1479,7 +1887,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6955388,
     "lng": 4.615122,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 107,
@@ -1493,7 +1905,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9115766,
     "lng": 4.6769226,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 108,
@@ -1507,7 +1923,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8558588,
     "lng": 4.3999831,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 109,
@@ -1521,7 +1941,11 @@
     "city": "Braine-l'Alleud",
     "lat": 50.6950031,
     "lng": 4.3654669,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q3142153",
+      "wikipedia": null
+    }
   },
   {
     "id": 110,
@@ -1535,7 +1959,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8593854,
     "lng": 4.4172898,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 111,
@@ -1549,7 +1977,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8448978,
     "lng": 4.3224844,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 112,
@@ -1563,7 +1995,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8180577,
     "lng": 4.3638573,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 113,
@@ -1577,7 +2013,11 @@
     "city": "Sint-Stevens-Woluwe",
     "lat": 50.870228,
     "lng": 4.460218,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 114,
@@ -1591,7 +2031,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8582367,
     "lng": 4.3702673,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 115,
@@ -1605,7 +2049,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8312319,
     "lng": 4.3392862,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 116,
@@ -1619,7 +2067,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8788974,
     "lng": 4.3511398,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 117,
@@ -1633,7 +2085,11 @@
     "city": "Mechelen",
     "lat": 51.0456094,
     "lng": 4.4779366,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 118,
@@ -1647,7 +2103,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.873839,
     "lng": 4.4927049,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 119,
@@ -1661,7 +2121,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7730114,
     "lng": 4.2673041,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 120,
@@ -1675,7 +2139,11 @@
     "city": "Waterloo",
     "lat": 50.7096702,
     "lng": 4.4034196,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q2510786",
+      "wikipedia": null
+    }
   },
   {
     "id": 121,
@@ -1689,7 +2157,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8191778,
     "lng": 4.4150819,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 122,
@@ -1703,7 +2175,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.762073,
     "lng": 4.5581182,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 123,
@@ -1717,7 +2193,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.871535,
     "lng": 4.3428464,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 124,
@@ -1731,7 +2211,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7056919,
     "lng": 4.6153512,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 125,
@@ -1745,7 +2229,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.856368,
     "lng": 4.4042799,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 126,
@@ -1759,7 +2247,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8726115,
     "lng": 4.3392033,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 127,
@@ -1773,7 +2265,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9472701,
     "lng": 4.0351344,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 128,
@@ -1787,7 +2283,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8197467,
     "lng": 4.3416387,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 129,
@@ -1801,7 +2301,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8285569,
     "lng": 4.3406899,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 130,
@@ -1815,7 +2319,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7323256,
     "lng": 4.2299434,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 131,
@@ -1829,7 +2337,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6908269,
     "lng": 4.4116148,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q2510786",
+      "wikipedia": null
+    }
   },
   {
     "id": 132,
@@ -1843,7 +2355,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.841166,
     "lng": 4.322233,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 133,
@@ -1857,7 +2373,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8449547,
     "lng": 4.3095709,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 134,
@@ -1871,7 +2391,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8673551,
     "lng": 4.350175,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 135,
@@ -1885,7 +2409,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8735814,
     "lng": 4.3241233,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 136,
@@ -1899,7 +2427,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8821035,
     "lng": 4.3382464,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 137,
@@ -1913,7 +2445,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8207773,
     "lng": 4.3143037,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 138,
@@ -1927,7 +2463,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8436392,
     "lng": 4.0315445,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 139,
@@ -1941,7 +2481,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.9616688,
     "lng": 4.5883633,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 140,
@@ -1955,7 +2499,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7667693,
     "lng": 4.4772801,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 141,
@@ -1969,7 +2517,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7581231,
     "lng": 4.2663441,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 142,
@@ -1983,7 +2535,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8317439,
     "lng": 4.3570103,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 143,
@@ -1997,7 +2553,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8619142,
     "lng": 4.3418988,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 144,
@@ -2011,7 +2571,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.7857818,
     "lng": 4.4998056,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 145,
@@ -2025,7 +2589,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.868897,
     "lng": 4.3358747,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 146,
@@ -2039,7 +2607,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.8173198,
     "lng": 4.3208259,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 147,
@@ -2053,7 +2625,11 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6874129,
     "lng": 4.3161426,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": null,
+      "wikipedia": null
+    }
   },
   {
     "id": 148,
@@ -2067,6 +2643,10 @@
     "city": "Bruxelles, Belgium",
     "lat": 50.6891102,
     "lng": 4.3253832,
-    "certifications": []
+    "certifications": [],
+    "meta": {
+      "wikidata": "Q108272936",
+      "wikipedia": null
+    }
   }
 ]

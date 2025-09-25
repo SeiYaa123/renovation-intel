@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "import:osm": "node jobs/osm_import.js"
+    "import:osm": "node jobs/osm_import.js",
+    "list:web": "node scripts/list_websites.js"
   },
   "keywords": [],
   "author": "",

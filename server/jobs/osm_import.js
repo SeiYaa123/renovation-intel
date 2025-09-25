@@ -1,6 +1,5 @@
 // server/jobs/osm_import.js
 // Usage: node jobs/osm_import.js "Bruxelles, Belgium" 25
-// Gratuit: Nominatim (géocodage) + Overpass (OpenStreetMap)
 
 require("dotenv").config();
 const fs = require("fs");
@@ -51,6 +50,15 @@ function upsert(list, supplier) {
     });
 }
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+function tag(obj, key) {
+  return obj?.tags?.[key] || obj?.tags?.[`contact:${key}`] || null;
+}
+function cityFromTags(tags = {}) {
+  return tags["addr:city"] || tags["addr:town"] || tags["addr:suburb"] || null;
+}
+
 async function geocodeCity(q) {
   const url = `https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(
     q
@@ -58,14 +66,14 @@ async function geocodeCity(q) {
   const res = await fetch(url, {
     headers: { "User-Agent": `RenovationIntel/1.0 (${CONTACT_EMAIL})` },
   });
+  if (!res.ok) throw new Error(`Nominatim HTTP ${res.status}`);
   const js = await res.json();
   if (!js?.length) throw new Error("City not found by Nominatim");
   return { lat: Number(js[0].lat), lon: Number(js[0].lon) };
 }
 
 function buildOverpassQL(lat, lon, radiusKm) {
-  const R = Math.max(1, Math.min(50, Number(radiusKm))) * 1000; // mètres, protège l'API
-  // Sélection de commerces pertinents (OSM tags)
+  const R = Math.max(1, Math.min(50, Number(radiusKm))) * 1000; // m
   return `
 [out:json][timeout:25];
 (
@@ -80,22 +88,16 @@ out body;
 `;
 }
 
-function tag(obj, key) {
-  return obj?.tags?.[key] || obj?.tags?.[`contact:${key}`] || null;
-}
-
-function cityFromTags(tags = {}) {
-  return tags["addr:city"] || tags["addr:town"] || tags["addr:suburb"] || null;
-}
-
 (async () => {
   console.log(`🔎 OSM import around "${CITY}" (${RADIUS_KM} km)`);
+
   const current = loadCurrent();
 
   // 1) Géocodage
   const { lat, lon } = await geocodeCity(CITY);
+  console.log(`📍 Center = ${lat.toFixed(5)}, ${lon.toFixed(5)}`);
 
-  // 2) Overpass
+  // 2) Requête Overpass
   const ql = buildOverpassQL(lat, lon, RADIUS_KM);
   const res = await fetch("https://overpass-api.de/api/interpreter", {
     method: "POST",
@@ -105,35 +107,52 @@ function cityFromTags(tags = {}) {
     },
     body: new URLSearchParams({ data: ql }),
   });
-  const data = await res.json();
-  const elements = Array.isArray(data?.elements) ? data.elements : [];
 
+  if (!res.ok) {
+    const txt = await res.text().catch(() => "");
+    throw new Error(`Overpass HTTP ${res.status} — ${txt.slice(0, 200)}`);
+  }
+
+  const data = await res.json().catch(() => ({}));
+  const elements = Array.isArray(data?.elements) ? data.elements : [];
+  console.log(`📦 Overpass returned ${elements.length} elements`);
+
+  // 3) Mapping -> suppliers
   let inserted = 0;
   for (const el of elements) {
     const name = tag(el, "name");
     if (!name) continue;
 
+    const website = tag(el, "website") || tag(el, "url");
+    const email = tag(el, "email");
     const supplier = {
       name,
       phone: tag(el, "phone"),
-      email: tag(el, "email"),
-      website: tag(el, "website"),
-      eco: "B", // défaut; tu pourras recalculer selon certifs
+      email: email || null,
+      website: website || null,
+      eco: "B", // défaut
       rating: null,
       price: null,
       city: cityFromTags(el.tags) || CITY,
       lat: el.lat ?? el.center?.lat ?? null,
       lng: el.lon ?? el.center?.lon ?? null,
-      certifications: [], // on enrichira ensuite (FSC/LEED/BREEAM)
+      certifications: [],
+      meta: {
+        wikidata: el.tags?.wikidata || el.tags?.["brand:wikidata"] || null,
+        wikipedia: el.tags?.wikipedia || null,
+      },
     };
 
     upsert(current, supplier);
     inserted++;
+    // douceur API
+    if (inserted % 50 === 0) await sleep(150);
   }
 
+  // 4) Sauvegarde
   save(current);
   console.log(
-    `✅ OSM: ${inserted} éléments traités · total en base: ${current.length}`
+    `✅ ${inserted} éléments traités · total en base: ${current.length}`
   );
 })().catch((e) => {
   console.error("❌ OSM import failed:", e);

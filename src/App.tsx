@@ -68,6 +68,118 @@ function Header({
   );
 }
 
+function MarginComparePanel({ query }: { query: string }) {
+  const [sell, setSell] = React.useState<number | "">("");
+  const [rows, setRows] = React.useState<any[]>([]);
+  const [loading, setLoading] = React.useState(false);
+
+  React.useEffect(() => {
+    const ctrl = new AbortController();
+    const t = setTimeout(async () => {
+      const q = query.trim();
+      if (q.length < 2) {
+        setRows([]);
+        return;
+      }
+      try {
+        setLoading(true);
+        const p = new URLSearchParams();
+        p.set("q", q);
+        p.set("limit", "10");
+        if (sell !== "") p.set("sell", String(sell));
+        const res = await fetch(`/api/compare-prices?${p.toString()}`, {
+          signal: ctrl.signal,
+        });
+        const js = await res.json();
+        setRows(js.items || []);
+      } catch {
+        setRows([]);
+      } finally {
+        setLoading(false);
+      }
+    }, 400);
+    return () => {
+      ctrl.abort();
+      clearTimeout(t);
+    };
+  }, [query, sell]);
+
+  if (!rows.length && !loading) return null;
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 mt-6">
+      <div className="bg-white border rounded-xl shadow-sm p-4">
+        <div className="flex flex-wrap items-center gap-3 mb-3">
+          <h3 className="text-lg font-semibold">
+            Comparatif prix/marge pour “{query}”
+          </h3>
+          <div className="ml-auto flex items-center gap-2">
+            <span className="text-sm text-gray-600">Prix de vente (€)</span>
+            <input
+              type="number"
+              value={sell === "" ? "" : sell}
+              onChange={(e) =>
+                setSell(e.target.value === "" ? "" : Number(e.target.value))
+              }
+              className="w-28 border rounded-lg px-3 py-1.5 text-sm"
+              placeholder="ex: 179"
+            />
+          </div>
+        </div>
+
+        {loading && <div className="text-sm text-gray-500 mb-2">Calcul…</div>}
+
+        <div className="overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="text-left text-gray-500 border-b">
+                <th className="py-2">Fournisseur</th>
+                <th className="py-2">Coût (EUR)</th>
+                <th className="py-2">Lien</th>
+                <th className="py-2">Marge €</th>
+                <th className="py-2">Marge %</th>
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((r, i) => (
+                <tr key={i} className="border-b last:border-0">
+                  <td className="py-2">{r.supplier_name}</td>
+                  <td className="py-2">€{r.cost_eur?.toFixed(2)}</td>
+                  <td className="py-2">
+                    {r.product_url ? (
+                      <a
+                        className="text-blue-600 hover:underline"
+                        href={r.product_url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Voir
+                      </a>
+                    ) : (
+                      "—"
+                    )}
+                  </td>
+                  <td className="py-2">
+                    {r.margin_abs != null ? `€${r.margin_abs.toFixed(2)}` : "—"}
+                  </td>
+                  <td className="py-2">
+                    {r.margin_pct != null ? `${r.margin_pct.toFixed(1)}%` : "—"}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p className="mt-2 text-xs text-gray-500">
+          * Prix scrappés (cache 12h). Pour plus de fiabilité, demande des flux
+          CSV/API aux fournisseurs.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 function Hero({ onExplore }: { onExplore: () => void }) {
   return (
     <div className="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white">
@@ -365,6 +477,7 @@ export default function App() {
         onSubmitSearch={handleSubmitSearch}
       />
       <Hero onExplore={scrollToSuppliers} />
+      <MarginComparePanel query={query} />
 
       {loading && (
         <div className="max-w-6xl mx-auto px-4 mt-6">
