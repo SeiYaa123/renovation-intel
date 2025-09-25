@@ -1,0 +1,10 @@
+node_modules/
+dist/
+build/
+.vite/
+*.log
+.DS_Store
+Thumbs.db
+.env
+server/.env
+server/data/price_cache.json

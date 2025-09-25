@@ -1,0 +1,14 @@
+[
+  {
+    "id": "prod_visseuse_18v",
+    "name": "Perceuse-visseuse 18V",
+    "synonyms": ["visseuse", "perceuse visseuse", "perceuse-visseuse", "drill driver", "visseuse 18v"],
+    "eans": ["1234567890123", "2000000000001"]
+  },
+  {
+    "id": "prod_embouts_ph2",
+    "name": "Embouts de vissage PH2",
+    "synonyms": ["embout", "embouts", "ph2", "bits ph2"],
+    "eans": ["4000000000002"]
+  }
+]

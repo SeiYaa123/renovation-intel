@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "EcoPanel BV",
+    "price": 42,
+    "rating": 4.6,
+    "eco": "A",
+    "phone": "+3225550101",
+    "email": "sales@ecopanel.eu",
+    "certifications": ["FSC", "BREEAM"],
+    "city": "Bruxelles"
+  },
+  {
+    "id": 2,
+    "name": "NordicTiles",
+    "price": 29,
+    "rating": 4.2,
+    "eco": "B",
+    "phone": "+3225550202",
+    "email": "hello@nordictiles.com",
+    "certifications": ["CE"],
+    "city": "Anvers"
+  },
+  {
+    "id": 3,
+    "name": "Hempcrete Works",
+    "price": 56,
+    "rating": 4.8,
+    "eco": "A",
+    "phone": "+3225550303",
+    "email": "team@hempcrete.works",
+    "certifications": ["LEED"],
+    "city": "Liège"
+  }
+]

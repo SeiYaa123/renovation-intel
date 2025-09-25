@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEST: classe utilitaire simple */
+.tw-proof {
+  background: #22c55e;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* TEST: doit colorer le fond en jaune si le CSS est chargé */
+body {
+  background: #fffbe6 !important;
+}

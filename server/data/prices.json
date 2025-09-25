@@ -1,0 +1,32 @@
+[
+  {
+    "supplier_id": 1,
+    "product_id": "prod_visseuse_18v",
+    "ean": "1234567890123",
+    "price": 129.9,
+    "currency": "EUR",
+    "unit": "pièce",
+    "stock": 12,
+    "url": "https://ecopanel.eu/tools/visseuse-18v"
+  },
+  {
+    "supplier_id": 2,
+    "product_id": "prod_visseuse_18v",
+    "ean": "1234567890123",
+    "price": 119,
+    "currency": "EUR",
+    "unit": "pièce",
+    "stock": 5,
+    "url": "https://nordictiles.com/tools/visseuse-18v"
+  },
+  {
+    "supplier_id": 3,
+    "product_id": "prod_visseuse_18v",
+    "ean": "1234567890123",
+    "price": 149,
+    "currency": "EUR",
+    "unit": "pièce",
+    "stock": 3,
+    "url": "https://hempcrete.works/store/visseuse-18v"
+  }
+]
