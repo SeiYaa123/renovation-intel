@@ -20,7 +20,7 @@ const genericPatterns = [
   (base, q) => `${base}/recherche?q=${encodeURIComponent(q)}`,
   (base, q) => `${base}/zoeken?q=${encodeURIComponent(q)}`,
   (base, q) => `${base}/catalogsearch/result/?q=${encodeURIComponent(q)}`, // Magento
-  (base, q) => `${base}/?s=${encodeURIComponent(q)}`, // WordPress
+  (base, q) => `${base}/?s=${encodeURIComponent(q)}`,                      // WordPress
 ];
 
 module.exports = { domainOverrides, genericPatterns };

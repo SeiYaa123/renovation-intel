@@ -3,6 +3,19 @@ const express = require("express");
 const cors = require("cors");
 const fs = require("fs");
 const path = require("path");
+const cron = require("node-cron");
+const { spawn } = require("child_process");
+
+// Tous les jours à 03:30
+cron.schedule("30 3 * * *", () => {
+  const p = spawn(
+    process.execPath,
+    [path.join(__dirname, "jobs", "certs_sync.js")],
+    {
+      stdio: "inherit",
+    }
+  );
+});
 
 process.on("unhandledRejection", (err) =>
   console.error("[UNHANDLED REJECTION]", err)
@@ -14,6 +27,131 @@ process.on("uncaughtException", (err) =>
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+const CERTS_FILE = path.join(__dirname, "data", "certifications.json");
+
+function loadCerts() {
+  if (!fs.existsSync(CERTS_FILE)) return { items: [] };
+  try {
+    return JSON.parse(fs.readFileSync(CERTS_FILE, "utf8"));
+  } catch {
+    return { items: [] };
+  }
+}
+function saveCerts(db) {
+  fs.mkdirSync(path.dirname(CERTS_FILE), { recursive: true });
+  fs.writeFileSync(CERTS_FILE, JSON.stringify(db, null, 2), "utf8");
+}
+function slugify(s = "") {
+  return s
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+const multer = require("multer");
+const { parse } = require("csv-parse/sync");
+const upload = multer({ storage: multer.memoryStorage() });
+
+// POST /api/certs/import-csv  (form-data: file=certs.csv)
+app.post("/api/certs/import-csv", upload.single("file"), (req, res) => {
+  try {
+    if (!req.file) return res.status(400).json({ error: "file required" });
+    const csv = req.file.buffer.toString("utf8");
+    const rows = parse(csv, {
+      columns: true,
+      skip_empty_lines: true,
+      trim: true,
+    });
+
+    const db = loadCerts();
+    const now = new Date().toISOString();
+    let upserted = 0;
+
+    for (const r of rows) {
+      const name = (r.name || "").trim();
+      if (!name) continue;
+
+      const slug = slugify(r.slug || name);
+      const idx = db.items.findIndex((x) => x.slug === slug);
+
+      const item = {
+        name,
+        slug,
+        type: (r.type || "").toLowerCase() || null,
+        jurisdiction: (r.jurisdiction || "").toUpperCase() || null,
+        issuer: r.issuer || null,
+        summary: r.summary || null,
+        official_register_url: r.official_register_url || null,
+        docs_url: r.docs_url || null,
+        tags: r.tags
+          ? r.tags
+              .split("|")
+              .map((t) => t.trim())
+              .filter(Boolean)
+          : [],
+        status: (r.status || "active").toLowerCase(),
+        aliases: r.aliases
+          ? r.aliases
+              .split("|")
+              .map((a) => a.trim())
+              .filter(Boolean)
+          : [],
+        updatedAt: now,
+      };
+
+      if (idx >= 0)
+        db.items[idx] = { ...db.items[idx], ...item, updatedAt: now };
+      else db.items.push(item);
+      upserted++;
+    }
+
+    saveCerts(db);
+    res.json({ ok: true, upserted, total: db.items.length });
+  } catch (e) {
+    res.status(500).json({ error: String(e) });
+  }
+});
+
+// GET /api/certs?q=&type=&jurisdiction=&limit=50
+app.get("/api/certs", (req, res) => {
+  const q = (req.query.q || "").toString().trim().toLowerCase();
+  const type = (req.query.type || "").toString().trim().toLowerCase(); // person/company/product/project
+  const jurisdiction = (req.query.jurisdiction || "")
+    .toString()
+    .trim()
+    .toUpperCase(); // BE/EU/INTL
+  const limit = Math.min(Math.max(Number(req.query.limit || 50), 1), 200);
+
+  const db = loadCerts();
+  let items = db.items;
+
+  if (type) items = items.filter((x) => (x.type || "").toLowerCase() === type);
+  if (jurisdiction)
+    items = items.filter(
+      (x) => (x.jurisdiction || "").toUpperCase() === jurisdiction
+    );
+  if (q) {
+    const toks = q.split(/[^a-z0-9]+/).filter(Boolean);
+    items = items.filter((x) => {
+      const hay = [
+        x.name,
+        x.slug,
+        x.issuer,
+        x.summary,
+        ...(x.aliases || []),
+        ...(x.tags || []),
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      return toks.every((t) => hay.includes(t));
+    });
+  }
+  res.json({ count: items.length, items: items.slice(0, limit) });
+});
 
 const DATA_FILE = path.join(__dirname, "data", "suppliers.json");
 

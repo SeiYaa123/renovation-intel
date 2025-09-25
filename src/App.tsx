@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { Building2, Search, Star, Phone, Mail, MapPin } from "lucide-react";
+import CertsPanel from "./components/CertsPanel";
 
 type Supplier = {
   id: number;
@@ -505,6 +506,9 @@ export default function App() {
         }}
         anchorRef={listRef}
       />
+
+      {/* ← Ajoute ceci */}
+      <CertsPanel />
 
       <footer className="bg-gray-900 text-white mt-12">
         <div className="max-w-6xl mx-auto px-4 py-8 text-center">
